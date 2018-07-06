@@ -24,13 +24,13 @@ public class Find_idForm extends JPanel{
 		find_idNum = new JTextField();
 		
 		setLayout(null);
-		find_idAlert.setBounds(304, 193, 114, 26);
-		find_idTime.setBounds(304, 193, 114, 26);
-		find_idConfirm.setBounds(161, 244, 153, 44);
-		find_idSubmit.setBounds(304, 116, 130, 44);
-		find_idName.setBounds(0, 50, 290, 50);
-		find_idTel.setBounds(0, 113, 290, 50);
-		find_idNum.setBounds(0, 184, 290, 44);
+		find_idAlert.setBounds(78, 12, 282, 26);
+		find_idTime.setBounds(327, 239, 114, 26);
+		find_idConfirm.setBounds(327, 160, 153, 44);
+		find_idSubmit.setBounds(181, 309, 130, 44);
+		find_idName.setBounds(23, 76, 290, 50);
+		find_idTel.setBounds(23, 154, 290, 50);
+		find_idNum.setBounds(23, 230, 290, 44);
 		
 		add(find_idAlert);
 		add(find_idTime);
@@ -40,7 +40,7 @@ public class Find_idForm extends JPanel{
 		add(find_idTel);
 		add(find_idNum);
 		
-		setBounds(0, 0, 450, 50);
+		setBounds(0, 0, 495, 365);
 		setVisible(true);
 	}
 }
