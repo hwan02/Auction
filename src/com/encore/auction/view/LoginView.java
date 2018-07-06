@@ -7,42 +7,49 @@ import javax.swing.JPasswordField;
 import java.awt.Font;
 import javax.swing.JCheckBox;
 
-public class LoginView  extends JFrame{
-	JTextField id_tf;           //ID 작성 하는곳
-	JPasswordField password_pf; //비밀번호 작성 하는곳
+public class LoginView extends JFrame {
+	/*
+		JTextField id_tf 		   : ID 작성 하는곳 
+		JPasswordField password_pf : 비밀번호 작성 하는곳
 
-	JButton login_bt;            //로그인 버튼
-	JButton guest_bt;            //게스트 버튼
-	JButton id_password_find_bt; //아이디 및 비밀번호 찾기 버튼
-	JButton button;              //회원가입 버튼
-	
+		JButton login_bt 			: 로그인 버튼 
+		JButton guest_bt 			: 게스트 버튼 JButton
+		JButton button 	 			: 회원가입 버튼
+		JButton id_password_find_bt : 아이디 및 비밀번호 찾기 버튼 
+	 */
+
+	JTextField id_tf;
+	JPasswordField password_pf;
+
+	JButton login_bt;
+	JButton guest_bt;
+	JButton button;
+	JButton id_password_find_bt;
+
 	public LoginView() {
 		setTitle("로그인");
-		
+
 		id_tf = new JTextField();
 		id_tf.setFont(new Font("굴림", Font.PLAIN, 20));
 		password_pf = new JPasswordField();
 		password_pf.setFont(new Font("굴림", Font.PLAIN, 20));
-		
+
 		login_bt = new JButton("Login");
 		guest_bt = new JButton("Guest");
 		id_password_find_bt = new JButton("아이디 및 비밀번호 찾기");
 		button = new JButton("회원가입");
-		
+
 		login_bt.setFont(new Font("굴림", Font.BOLD, 17));
 		guest_bt.setFont(new Font("굴림", Font.BOLD, 17));
 		button.setFont(new Font("굴림", Font.BOLD, 17));
-		
+
 		id_tf.setBounds(91, 278, 277, 54);
 		password_pf.setBounds(91, 344, 277, 54);
 		login_bt.setBounds(91, 456, 277, 36);
 		guest_bt.setBounds(91, 504, 277, 36);
 		id_password_find_bt.setBounds(91, 735, 277, 27);
 		button.setBounds(91, 552, 277, 36);
-		
-		
-		
-		
+
 		getContentPane().setLayout(null);
 		getContentPane().add(id_tf);
 		getContentPane().add(password_pf);
@@ -50,25 +57,18 @@ public class LoginView  extends JFrame{
 		getContentPane().add(guest_bt);
 		getContentPane().add(id_password_find_bt);
 		getContentPane().add(button);
-		
+
 		JCheckBox chckbxNewCheckBox = new JCheckBox("로그인상태 유지");
 		chckbxNewCheckBox.setFont(new Font("굴림", Font.PLAIN, 15));
 		chckbxNewCheckBox.setBounds(101, 406, 267, 27);
 		getContentPane().add(chckbxNewCheckBox);
-		
-		
-		
 
-		
-		
-		
-		
-		setBounds(300,200,490,821);
+		setBounds(300, 200, 490, 821);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
-	
+
 	public static void main(String[] args) {
 		new LoginView();
-	}//main End
-}//class End
+	}// main End
+}// class End

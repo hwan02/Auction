@@ -13,25 +13,43 @@ import java.awt.Font;
 import javax.swing.JButton;
 
 public class AddrSearchView extends JFrame {
-	JTabbedPane tPane;               //주소검색 탭 틀
+/*	JTabbedPane tPane : 주소검색 탭 틀
+	JLabel addr_Lb 	  : 지번주소 JLabel
 	
-	JPanel streetNameAddr_p;         //도로명 주소 JPanel 
-	JPanel addr_p;                   //지번 주소 JPanel
+	JPanel streetNameAddr_p : 도로명 주소 JPanel 
+	JPanel addr_p 			: 지번 주소 JPanel
 	
-	JLabel addr_Lb;                  //지번주소 JLabel
+	JTextField streetNameAddr_tf : 도로명 주소/ 주소 검색버튼으로 부터 받아서 자동으로 생성
+	JTextField addr_tf    		 : 지번주소/ 주소 검색버튼으로 부터 받아서 자동으로 생성
 	
-	JTextField streetNameAddr_tf;    //도로명 주소 JTextField
-	JTextField addr_tf;              //지번주소 JTextField
+	JTextArea streetNameAddr_ta : 도로명 주소 작성 예시 
+	JTextArea addr_ta 			: 지번주소 주소 작성 예시
+	JTextArea addr_ta2 			: 지번주소/ 변경사항 게시 : 2016년 8월 1일부터는 5자리 우편번호 사용이 의무화됩니다.
+								
+	JButton streetNameAddr_SearchBt : 도로명 주소에서 주소 검색 버튼
+	JButton streetNameAddr_ExitBT   : 도로명 주소에서 주소 닫기 버튼
+	JButton addr_SearchBt           : 지번주소에서 주소검색 버튼
+	JButton addr_ExitBT             : 지번주소에서 닫기 버튼
+*/
 	
-	JTextArea streetNameAddr_ta;     //도로명 주소 JTextArea  
-	JTextArea addr_ta;               //지번주소 JTextArea
-	JTextArea addr_ta2;              //지번주소 JTextArea
+	JTabbedPane tPane;
+	JLabel addr_Lb;
+	
+	JPanel streetNameAddr_p;
+	JPanel addr_p;
+	
+	JTextField streetNameAddr_tf;
+	JTextField addr_tf;
+	
+	JTextArea streetNameAddr_ta;
+	JTextArea addr_ta;
+	JTextArea addr_ta2;
 
-	JButton streetNameAddr_SearchBt; //도로명 주소에서 주소 검색 버튼
-	JButton streetNameAddr_ExitBT;   //도로명 주소에서 주소 닫기 버튼
-	JButton addr_SearchBt;           //지번주소에서 주소검색 버튼
-	JButton addr_ExitBT;             //지번주소에서 닫기 버튼
-
+	JButton streetNameAddr_SearchBt;
+	JButton streetNameAddr_ExitBT;
+	JButton addr_SearchBt;
+	JButton addr_ExitBT;
+	
 	public AddrSearchView() {
 		setTitle("주소 검색");
 		
@@ -88,6 +106,7 @@ public class AddrSearchView extends JFrame {
 		addr_p.add(addr_ExitBT);
 		addr_p.add(addr_ta2);
 		getContentPane().add(tPane);
+		
 		setSize(800, 341);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
