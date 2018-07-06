@@ -13,9 +13,9 @@ public class Picture extends JPanel{
 	 public Picture(String path) {
 
 		 picture_landscape = new ImageIcon(path);
-		 label_price = new JLabel("ÇöÀç°¡");
-		 label_bidder = new JLabel("ÀÔÂûÀÚ");
-		 label_leftTime = new JLabel("³²Àº½Ã°£");
+		 label_price = new JLabel("í˜„ì¬ê°€");
+		 label_bidder = new JLabel("ì…ì°°ì");
+		 label_leftTime = new JLabel("ë‚¨ì€ì‹œê°„");
 		 label_landscape = new JLabel(picture_landscape);
 		 
 		 setLayout(null);

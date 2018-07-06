@@ -7,7 +7,7 @@ import com.encore.auction.view.MainView;
 
 public class Controller extends JFrame {
 	MainView mainView; 
-	AddIdPassForm addIdPass;				//¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£ Ã£±âÆû
+	AddIdPassForm addIdPass;				//ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°í¼
 	 
 	public Controller() {
 		mainView = new MainView();

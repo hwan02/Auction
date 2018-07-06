@@ -6,19 +6,19 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 
 public class Find_idForm extends JPanel{
-	private JLabel find_idAlert; 		//¾ÆÀÌµğ Ã£±â_³»¿ë
-	private JLabel find_idTime;			//¾ÆÀÌµğÃ£±â_ÀÎÁõ½Ã°£
-	public JButton find_idConfirm;	//¾ÆÀÌµğÃ£±â_ÀÎÁõ¹öÆ°
-	public JButton find_idSubmit; 	//¾ÆÀÌµğ Ã£±â È®ÀÎ ¹öÆ°
-	private JTextField find_idName;	//ÀÌ¸ŞÀÏÁÖ¼ÒÃ£±â_ÀÌ¸§ 
-	private JTextField find_idTel;		//ÀÌ¸ŞÀÏÁÖ¼ÒÃ£±â_ÀüÈ­¹øÈ£
-	private JTextField find_idNum;	//ÀÌ¸ŞÀÏÁÖ¼ÒÃ£±â_ÀÎÁõ¹øÈ£
+	private JLabel find_idAlert; 		//ì•„ì´ë”” ì°¾ê¸°_ë‚´ìš©
+	private JLabel find_idTime;			//ì•„ì´ë””ì°¾ê¸°_ì¸ì¦ì‹œê°„
+	public JButton find_idConfirm;	//ì•„ì´ë””ì°¾ê¸°_ì¸ì¦ë²„íŠ¼
+	public JButton find_idSubmit; 	//ì•„ì´ë”” ì°¾ê¸° í™•ì¸ ë²„íŠ¼
+	private JTextField find_idName;	//ì´ë©”ì¼ì£¼ì†Œì°¾ê¸°_ì´ë¦„ 
+	private JTextField find_idTel;		//ì´ë©”ì¼ì£¼ì†Œì°¾ê¸°_ì „í™”ë²ˆí˜¸
+	private JTextField find_idNum;	//ì´ë©”ì¼ì£¼ì†Œì°¾ê¸°_ì¸ì¦ë²ˆí˜¸
 	public Find_idForm() {
 		
-		find_idAlert = new JLabel("ÀÌ¸ŞÀÏ ÀÎÁõÀ» ÅëÇØ ¾ÆÀÌµğ¸¦ Ã£À¸¼¼¿ä,");
-		find_idTime = new JLabel("½Ã°£");
-		find_idConfirm = new JButton("ÀÎÁõ");
-		find_idSubmit = new JButton("È®ÀÎ");
+		find_idAlert = new JLabel("ì´ë©”ì¼ ì¸ì¦ì„ í†µí•´ ì•„ì´ë””ë¥¼ ì°¾ìœ¼ì„¸ìš”,");
+		find_idTime = new JLabel("ì‹œê°„");
+		find_idConfirm = new JButton("ì¸ì¦");
+		find_idSubmit = new JButton("í™•ì¸");
 		find_idName = new JTextField();
 		find_idTel = new JTextField();
 		find_idNum = new JTextField();

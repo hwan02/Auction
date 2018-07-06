@@ -4,17 +4,17 @@ import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
 public class AddIdPassForm extends JFrame{
-	 Find_idForm find_idForm;				//¾ÆÀÌµğ Ã£±âÆû
-	 Find_passForm find_passForm;	//ºñ¹Ğ¹øÈ£ Ã£±âÆû
+	 Find_idForm find_idForm;				//ì•„ì´ë”” ì°¾ê¸°í¼
+	 Find_passForm find_passForm;	//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°í¼
 	 JTabbedPane jtab;
 	public AddIdPassForm() {
-		setTitle("¾ÆÀÌµğ/ºñ¹Ğ¹øÈ£ Ã£±â");
+		setTitle("ì•„ì´ë””/ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°");
 		find_idForm = new Find_idForm();
 		find_passForm = new Find_passForm();
 		jtab = new JTabbedPane();
 		
-		jtab.addTab("¾ÆÀÌµğ Ã£±â", find_idForm);
-		jtab.addTab("ºñ¹Ğ¹øÈ£ Ã£±â", find_passForm);
+		jtab.addTab("ì•„ì´ë”” ì°¾ê¸°", find_idForm);
+		jtab.addTab("ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°", find_passForm);
 		
 		add(jtab);
 		

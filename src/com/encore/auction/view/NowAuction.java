@@ -32,8 +32,8 @@ public NowAuction() {
 		p7 = new Picture("C:\\Users\\Playdata\\Pictures\\picture_figure2.jpg");
 		p8 = new Picture("C:\\Users\\Playdata\\Pictures\\picture_figure3.jpg");
 		p9 = new Picture("C:\\Users\\Playdata\\Pictures\\picture_oil2.jpg");
-		bt_prev = new JButton("ÀÌÀü");
-		bt_next = new JButton("´ÙÀ½");
+		bt_prev = new JButton("ì´ì „");
+		bt_next = new JButton("ë‹¤ìŒ");
 		p1.setBounds(163, 12, 263, 255);
 		p2.setBounds(490, 12, 263, 255);
 		p3.setBounds(829, 12, 263, 255);

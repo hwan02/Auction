@@ -12,49 +12,49 @@ import javax.swing.JPanel;
 import java.awt.Font;
 public class MainView extends JFrame{
 	private JTextField main_searchBar;
-	public JButton main_state;		// ·Î±×ÀÎ »óÅÂ ¹öÆ°
-	public JButton main_alarm;		// ¾Ë¶÷ ¹öÆ°
-	public JButton main_mypage; // ¸¶ÀÌÆäÀÌÁö ¹öÆ°
-	public JButton main_logout;	// ·Î±×¾Æ¿ô ¹öÆ°
-	public JButton main_search;	// °Ë»ö ¹öÆ°(ÀÌ¸ğÆ¼ÄÜ)
-	public JButton main_seller;		// ÆÇ¸ÅÀÚ µî·ÏÇÏ±â ¹öÆ°
-	public JButton main_type1;		// ºĞ·ù1 
-	public JButton main_type2;		// ºĞ·ù2
-	public JButton main_type3;		// ºĞ·ù3
-	public JButton main_type4;		// ºĞ·ù4
-	public JButton main_type5;		// ºĞ·ù5
-	public JButton main_type6;		// ºĞ·ù6
-	public JButton main_newPro; // ½Å±Ôµî·Ï¼ø ¹öÆ°
-	public JButton main_lastpro;	// ¸¶°¨ÀÓ¹Ú¼ø ¹öÆ°
-	private JLabel main_point;	// °Ë»ö ÅØ½ºÆ® ¿· ·Î°í
-	public NowAuction nowA;		// ÇöÀç °æ¸Å»óÇ° ¸®½ºÆ® 
-	public PrevAuction prevA;		// °ú°Å °æ¸Å»óÇ° ¸®½ºÆ®
-	public NextAuction nextA;		//¿¹Á¤ °æ¸Å»óÇ° ¸®½ºÆ®
-	public JTabbedPane main_jtab; // ÅÇ
+	public JButton main_state;		// ë¡œê·¸ì¸ ìƒíƒœ ë²„íŠ¼
+	public JButton main_alarm;		// ì•ŒëŒ ë²„íŠ¼
+	public JButton main_mypage; // ë§ˆì´í˜ì´ì§€ ë²„íŠ¼
+	public JButton main_logout;	// ë¡œê·¸ì•„ì›ƒ ë²„íŠ¼
+	public JButton main_search;	// ê²€ìƒ‰ ë²„íŠ¼(ì´ëª¨í‹°ì½˜)
+	public JButton main_seller;		// íŒë§¤ì ë“±ë¡í•˜ê¸° ë²„íŠ¼
+	public JButton main_type1;		// ë¶„ë¥˜1 
+	public JButton main_type2;		// ë¶„ë¥˜2
+	public JButton main_type3;		// ë¶„ë¥˜3
+	public JButton main_type4;		// ë¶„ë¥˜4
+	public JButton main_type5;		// ë¶„ë¥˜5
+	public JButton main_type6;		// ë¶„ë¥˜6
+	public JButton main_newPro; // ì‹ ê·œë“±ë¡ìˆœ ë²„íŠ¼
+	public JButton main_lastpro;	// ë§ˆê°ì„ë°•ìˆœ ë²„íŠ¼
+	private JLabel main_point;	// ê²€ìƒ‰ í…ìŠ¤íŠ¸ ì˜† ë¡œê³ 
+	public NowAuction nowA;		// í˜„ì¬ ê²½ë§¤ìƒí’ˆ ë¦¬ìŠ¤íŠ¸ 
+	public PrevAuction prevA;		// ê³¼ê±° ê²½ë§¤ìƒí’ˆ ë¦¬ìŠ¤íŠ¸
+	public NextAuction nextA;		//ì˜ˆì • ê²½ë§¤ìƒí’ˆ ë¦¬ìŠ¤íŠ¸
+	public JTabbedPane main_jtab; // íƒ­
 	JPanel panel2;
 	JButton bt_1;
 	public MainView() {
-		setTitle("±×¸²°æ¸Å");
-		bt_1 = new JButton("¹öÆ°1");
+		setTitle("ê·¸ë¦¼ê²½ë§¤");
+		bt_1 = new JButton("ë²„íŠ¼1");
 		nowA = new NowAuction();
 		prevA = new PrevAuction();
 		nextA = new NextAuction();
 		main_searchBar = new JTextField();
-		main_state = new JButton("·Î±×ÀÎ ID");
-		main_alarm = new JButton("¾Ë¶÷");
-		main_mypage = new JButton("¸¶ÀÌÆäÀÌÁö");
-		main_logout = new JButton("·Î±×¾Æ¿ô");
-		main_search = new JButton("°Ë»ö");
-		main_seller = new JButton("ÆÇ¸ÅÀÚ µî·ÏÇÏ±â");
-		main_type1 = new JButton("Ç³°æÈ­");
-		main_type2 = new JButton("Á¤¹°È­");
-		main_type3 = new JButton("ÀÎ¹°È­");
-		main_type4 = new JButton("Á¾±³È­");
-		main_type5 = new JButton("¿ª»çÈ­");
-		main_type6 = new JButton("À¯È­");
-		main_newPro = new JButton("½Å±Ôµî·Ï¼ø");
-		main_lastpro = new JButton("¸¶°¨ÀÓ¹Ú¼ø");
-		main_point = new JLabel("°æ¸Å");
+		main_state = new JButton("ë¡œê·¸ì¸ ID");
+		main_alarm = new JButton("ì•ŒëŒ");
+		main_mypage = new JButton("ë§ˆì´í˜ì´ì§€");
+		main_logout = new JButton("ë¡œê·¸ì•„ì›ƒ");
+		main_search = new JButton("ê²€ìƒ‰");
+		main_seller = new JButton("íŒë§¤ì ë“±ë¡í•˜ê¸°");
+		main_type1 = new JButton("í’ê²½í™”");
+		main_type2 = new JButton("ì •ë¬¼í™”");
+		main_type3 = new JButton("ì¸ë¬¼í™”");
+		main_type4 = new JButton("ì¢…êµí™”");
+		main_type5 = new JButton("ì—­ì‚¬í™”");
+		main_type6 = new JButton("ìœ í™”");
+		main_newPro = new JButton("ì‹ ê·œë“±ë¡ìˆœ");
+		main_lastpro = new JButton("ë§ˆê°ì„ë°•ìˆœ");
+		main_point = new JLabel("ê²½ë§¤");
 		main_jtab = new JTabbedPane();
 		
 		getContentPane().setLayout(null);
@@ -77,10 +77,10 @@ public class MainView extends JFrame{
 		main_point.setBounds(134, 51, 115, 59);
 		main_jtab.setBounds(14, 192, 1254, 888);
 	
-		main_jtab.setFont(new Font("±¼¸²", Font.PLAIN, 40));
-		main_jtab.addTab("°ú°Å°æ¸Å¸®½ºÆ®", prevA);
-		main_jtab.addTab("ÇöÀç°æ¸Å¸®½ºÆ®", nowA);
-		main_jtab.addTab("¿¹Á¤°æ¸Å¸®½ºÆ®", nextA);
+		main_jtab.setFont(new Font("êµ´ë¦¼", Font.PLAIN, 40));
+		main_jtab.addTab("ê³¼ê±°ê²½ë§¤ë¦¬ìŠ¤íŠ¸", prevA);
+		main_jtab.addTab("í˜„ì¬ê²½ë§¤ë¦¬ìŠ¤íŠ¸", nowA);
+		main_jtab.addTab("ì˜ˆì •ê²½ë§¤ë¦¬ìŠ¤íŠ¸", nextA);
 		getContentPane().add(main_searchBar);
 		getContentPane().add(main_state);
 		getContentPane().add(main_alarm);

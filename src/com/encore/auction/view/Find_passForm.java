@@ -7,23 +7,23 @@ import javax.swing.JTextField;
 import java.awt.Font;
 
 public class Find_passForm extends JPanel{
-	private JLabel find_passAlert; 		//ºñ¹Ğ¹øÈ£ Ã£±â_¾ÆÀÌµğ¾È³»
-	private JLabel find_passMethod; 	//ºñ¹Ğ¹øÈ£ Ã£±â_¹æ¹ı¾È³»
-	private JTextField find_passName;	//ºñ¹Ğ¹øÈ£ Ã£±â_¾ÆÀÌµğÀÔ·Â 
-	public JButton find_passIdConfirm;//ºñ¹Ğ¹øÈ£ Ã£±â_¾ÆÀÌµğÈ®ÀÎ
-	public JButton find_passTel;			//ºñ¹Ğ¹øÈ£ Ã£±â_
-	public JButton find_passEmail;		//ºñ¹Ğ¹øÈ£ Ã£±â_ÀÎÁõ¹öÆ°
+	private JLabel find_passAlert; 		//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_ì•„ì´ë””ì•ˆë‚´
+	private JLabel find_passMethod; 	//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_ë°©ë²•ì•ˆë‚´
+	private JTextField find_passName;	//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_ì•„ì´ë””ì…ë ¥ 
+	public JButton find_passIdConfirm;//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_ì•„ì´ë””í™•ì¸
+	public JButton find_passTel;			//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_
+	public JButton find_passEmail;		//ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°_ì¸ì¦ë²„íŠ¼
 	public Find_passForm() {
-		find_passAlert = new JLabel("ºñ¹Ğ¹øÈ£ Ã£±â ÇÒ ¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-		find_passMethod = new JLabel("ºñ¹Ğ¹øÈ£ Ã£±â ÇÒ ¹æ¹ıÀ» ¼±ÅÃÇØÁÖ¼¼¿ä.");
+		find_passAlert = new JLabel("ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° í•  ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
+		find_passMethod = new JLabel("ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° í•  ë°©ë²•ì„ ì„ íƒí•´ì£¼ì„¸ìš”.");
 		find_passName = new JTextField();
-		find_passIdConfirm = new JButton("È®ÀÎ");
-		find_passTel = new JButton("ÈŞ´ëÆù º»ÀÎ ÀÎÁõ");
-		find_passEmail = new JButton("¸ŞÀÏ ÀÎÁõ");
+		find_passIdConfirm = new JButton("í™•ì¸");
+		find_passTel = new JButton("íœ´ëŒ€í° ë³¸ì¸ ì¸ì¦");
+		find_passEmail = new JButton("ë©”ì¼ ì¸ì¦");
 		
 		setLayout(null);
-		find_passAlert.setFont(new Font("±¼¸²", Font.BOLD, 15));
-		find_passMethod.setFont(new Font("±¼¸²", Font.BOLD, 15));
+		find_passAlert.setFont(new Font("êµ´ë¦¼", Font.BOLD, 15));
+		find_passMethod.setFont(new Font("êµ´ë¦¼", Font.BOLD, 15));
 		find_passAlert.setBounds(97, 57, 345, 26);
 		find_passMethod.setBounds(97, 209, 333, 26);
 		find_passName.setBounds(57, 106, 257, 44);
