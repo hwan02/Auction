@@ -68,7 +68,7 @@ public class LoginView extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
-	public static void main(String[] args) {
-		new LoginView();
-	}// main End
+//	public static void main(String[] args) {
+//		new LoginView();
+//	}// main End
 }// class End

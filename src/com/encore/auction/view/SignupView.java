@@ -180,7 +180,7 @@ public class SignupView extends JFrame {
 
 	
 	
-	public static void main(String[] args) {
-		new SignupView();
-	}// main End
+//	public static void main(String[] args) {
+//		new SignupView();
+//	}// main End
 }// class End

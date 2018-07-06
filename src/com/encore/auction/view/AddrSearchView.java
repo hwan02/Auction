@@ -112,7 +112,7 @@ public class AddrSearchView extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
-	public static void main(String[] ar) {
-		new AddrSearchView();
-	}
+//	public static void main(String[] ar) {
+//		new AddrSearchView();
+//	}
 }

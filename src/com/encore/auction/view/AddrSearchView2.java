@@ -87,8 +87,8 @@ public class AddrSearchView2 extends JFrame{
 		
 	}//생성자 End
 	
-	public static void main(String[] args) {
-		new AddrSearchView2();
-
-	}//main End
+//	public static void main(String[] args) {
+//		new AddrSearchView2();
+//
+//	}//main End
 }//class End
